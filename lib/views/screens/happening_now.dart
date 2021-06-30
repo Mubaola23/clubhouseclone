@@ -1,6 +1,7 @@
-import 'package:clubhouseclone/app_textfield.dart';
-import 'package:clubhouseclone/images.dart';
 import 'package:flutter/material.dart';
+
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/core/images.dart';
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/widgets/app_textfield.dart';
 
 class HappeningNow extends StatelessWidget {
   final String title;

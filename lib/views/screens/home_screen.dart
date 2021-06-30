@@ -1,6 +1,7 @@
-import 'package:clubhouseclone/dashboard.dart';
-import 'package:clubhouseclone/nav_bar.dart';
 import 'package:flutter/material.dart';
+
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/screens/dashboard_screen.dart';
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/widgets/nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

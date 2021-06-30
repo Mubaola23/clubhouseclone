@@ -1,5 +1,6 @@
-import 'package:clubhouseclone/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());

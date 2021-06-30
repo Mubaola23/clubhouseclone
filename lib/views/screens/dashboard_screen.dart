@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:clubhouseclone/happening_now.dart';
-import 'package:clubhouseclone/images.dart';
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/screens/happening_now.dart';
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/core/images.dart';
 import 'package:flutter/material.dart';
 
 class StartRoom extends StatelessWidget {
