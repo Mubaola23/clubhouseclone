@@ -1,8 +1,11 @@
 import 'dart:ui';
 
-import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/screens/happening_now.dart';
-import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/core/images.dart';
 import 'package:flutter/material.dart';
+
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/core/images.dart';
+import 'file:///C:/Users/user/Documents/Flutter/clubhouse_clone/lib/views/screens/happening_now.dart';
+
+import '../../core/constants.dart';
 
 class StartRoom extends StatelessWidget {
   @override
@@ -39,7 +42,8 @@ class StartRoom extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 24),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: responsive24(context)),
                           child: Text(
                             "Upcoming",
                             style: TextStyle(fontWeight: FontWeight.w700),
@@ -52,7 +56,8 @@ class StartRoom extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 24),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: responsive24(context)),
                           child: Text(
                             "Happening now",
                             style: TextStyle(fontWeight: FontWeight.w700),
@@ -92,12 +97,10 @@ class StartRoom extends StatelessWidget {
               ))),
       child: Container(
         padding: EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 24,
-        ),
+            horizontal: responsive16(context), vertical: responsive24(context)),
         margin: EdgeInsets.symmetric(
-          horizontal: 24,
-          vertical: 16,
+          horizontal: responsive24(context),
+          vertical: responsive16(context),
         ),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -109,7 +112,7 @@ class StartRoom extends StatelessWidget {
               TextSpan(
                   text: text.toUpperCase(),
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: responsive20(context),
                     fontWeight: FontWeight.w700,
                     color: Colors.black,
                   ),
@@ -118,14 +121,14 @@ class StartRoom extends StatelessWidget {
                         text:
                             "\n\nPitch your start up idea to VCs & top Entrepreneurs.",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: responsive16(context),
                           fontWeight: FontWeight.w400,
                           color: Color(0xff878699),
                         )),
                   ]),
             ),
             SizedBox(
-              height: 10,
+              height: responsive10(context),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -143,7 +146,7 @@ class StartRoom extends StatelessWidget {
                       child: Image.asset(img1),
                     ),
                     Container(
-                        margin: EdgeInsets.only(right: 8.0),
+                        margin: EdgeInsets.only(right: responsive8(context)),
                         width: MediaQuery.of(context).size.width / 15,
                         height: MediaQuery.of(context).size.width / 15,
                         decoration: BoxDecoration(
@@ -152,7 +155,7 @@ class StartRoom extends StatelessWidget {
                         ),
                         child: Image.asset(img2)),
                     Container(
-                        margin: EdgeInsets.only(right: 8.0),
+                        margin: EdgeInsets.only(right: responsive8(context)),
                         width: MediaQuery.of(context).size.width / 15,
                         height: MediaQuery.of(context).size.width / 15,
                         decoration: BoxDecoration(
@@ -163,8 +166,11 @@ class StartRoom extends StatelessWidget {
                   ],
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 8),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                  margin:
+                      EdgeInsets.symmetric(horizontal: responsive8(context)),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: responsive16(context),
+                      vertical: responsive6(context)),
                   decoration: BoxDecoration(
                     color: Color(0xffEFF0F5),
                     borderRadius: BorderRadius.circular(16),
@@ -180,18 +186,18 @@ class StartRoom extends StatelessWidget {
                       ),
                       Text(
                         "$person",
-                        style: TextStyle(fontSize: 12),
+                        style: TextStyle(fontSize: responsive12(context)),
                       ),
                       Icon(
                         Icons.mic_none,
-                        size: 15,
+                        size: responsive14(context),
                       ),
                       SizedBox(
                         width: 4,
                       ),
                       Text(
                         "$voice",
-                        style: TextStyle(fontSize: 12),
+                        style: TextStyle(fontSize: responsive12(context)),
                       ),
                     ],
                   ),
@@ -207,12 +213,12 @@ class StartRoom extends StatelessWidget {
   Widget _upcoming(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: 16,
-        vertical: 28,
+        horizontal: responsive16(context),
+        vertical: responsive28(context),
       ),
       margin: EdgeInsets.symmetric(
-        horizontal: 24,
-        vertical: 16,
+        horizontal: responsive24(context),
+        vertical: responsive16(context),
       ),
       decoration: BoxDecoration(
         color: Color(0xff5D60EF),
@@ -238,7 +244,7 @@ class StartRoom extends StatelessWidget {
                       text: "Design talks And Chill",
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          fontSize: 20,
+                          fontSize: responsive20(context),
                           color: Colors.white)),
                 ]),
           ),
@@ -254,8 +260,9 @@ class StartRoom extends StatelessWidget {
 
   Widget _designRow(BuildContext context, Color color, String img) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 8),
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      margin: EdgeInsets.symmetric(horizontal: responsive8(context)),
+      padding: EdgeInsets.symmetric(
+          horizontal: responsive16(context), vertical: responsive6(context)),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(24),
@@ -286,7 +293,8 @@ class StartRoom extends StatelessWidget {
         children: [
           Text(
             'Good Morning! \nBernice',
-            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 24),
+            style: TextStyle(
+                fontWeight: FontWeight.w500, fontSize: responsive24(context)),
           ),
           Row(
             children: [
